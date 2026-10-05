@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Sparko × 海悅廣告 | Architectural Poetics & Spatial Distinction</title>
+  <meta name="description" content="Sparko 攜手台灣建築代銷龍頭海悅廣告，融合前衛科技與空間美學，開啟劃時代殿堂級建築體驗。" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       TOP FIXED HEADER
+       ============================================================ -->
+  <header>
+    <div class="brand-wrapper">
+      <div class="brand-logo">
+        <span class="brand-sparko">Sparko</span>
+        <span class="brand-times">×</span>
+        <span class="brand-hiyes">海悅廣告</span>
+      </div>
+      <div class="brand-tagline">Architectural Distinction</div>
+    </div>
+
+    <div class="header-links">
+      <button id="btnHeaderCta" class="header-cta-fast" title="立即預約專屬鑑賞">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span>預約鑑賞</span>
+      </button>
+
+      <button id="btnFullscreen" class="btn-fullscreen" title="切換全螢幕" aria-label="Toggle Fullscreen">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       左下角固定標籤 (陪襯品牌水印，無背景無邊框)
+       文字：SPARKO DESIGN
+       ============================================================ -->
+  <div class="fixed-badge-sparko" aria-label="Brand Mark">SPARKO DESIGN</div>
+
+  <!-- ============================================================
+       MAIN FULLSCREEN SECTIONS
+       ============================================================ -->
+  <main>
+    <!-- Section 1: 主品牌與合作客戶 -->
+    <section class="first">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg one">
+            <div class="content-wrapper">
+              <span class="section-tag">01 / PREMIER COLLABORATION</span>
+              <h2 class="section-heading">Sparko × 海悅廣告</h2>
+              <p class="section-sub">Architectural Poetics & Spatial Distinction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: 頂級空間的數位詩意 -->
+    <section class="second">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <div class="content-wrapper">
+              <span class="section-tag">02 / SPATIAL REVOLUTION</span>
+              <h2 class="section-heading">頂級空間的數位詩意</h2>
+              <p class="section-sub">Digital Poetry in Luxury Architecture</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: 水平滾動畫廊 (Horizontal Scrolling Gallery 參考 codepen.io/GreenSock/pen/dydpJzY) -->
+    <section class="third section-gallery">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <div class="gallery-section-wrapper">
+              <!-- 頂部標題與定位標籤 -->
+              <div class="gallery-header">
+                <span class="section-tag">03 / SPATIAL PORTFOLIO · 典藏選粹</span>
+                <h2 class="gallery-title">極致建築美學矩陣</h2>
+                <p class="gallery-sub">Curated Landmark Architecture & Computational Spaces</p>
+              </div>
+
+              <!-- 水平滾動視窗與卡片軌道 -->
+              <div class="horizontal-gallery-viewport" id="galleryViewport">
+                <div class="horizontal-gallery-track" id="galleryTrack">
+                  <!-- 卡片 1 -->
+                  <article class="gallery-card is-active" data-index="0">
+                    <div class="card-image-box">
+                      <img src="images/gallery/gallery-1.jpg" alt="天際之穹" class="card-img" />
+                      <div class="card-badge">PROJECT 01</div>
+                    </div>
+                    <div class="card-info">
+                      <span class="card-category">ARCHITECTURAL SKYLINE</span>
+                      <h3 class="card-title">「天際之穹」頂峰地標</h3>
+                      <p class="card-desc">以雙曲面低輻射帷幕玻璃塑造層峰天際線，演算遮陽格柵隨四時日光自然演進。</p>
+                    </div>
+                  </article>
+
+                  <!-- 卡片 2 -->
+                  <article class="gallery-card" data-index="1">
+                    <div class="card-image-box">
+                      <img src="images/gallery/gallery-2.jpg" alt="懸浮之庭" class="card-img" />
+                      <div class="card-badge">PROJECT 02</div>
+                    </div>
+                    <div class="card-info">
+                      <span class="card-category">PARAMETRIC CANOPY</span>
+                      <h3 class="card-title">「懸浮之庭」幾何演算法光廊</h3>
+                      <p class="card-desc">引進參數化懸挑構架與漫射光學系統，將自然風光與前衛結構無縫揉合。</p>
+                    </div>
+                  </article>
+
+                  <!-- 卡片 3 -->
+                  <article class="gallery-card" data-index="2">
+                    <div class="card-image-box">
+                      <img src="images/gallery/gallery-3.jpg" alt="流動之域" class="card-img" />
+                      <div class="card-badge">PROJECT 03</div>
+                    </div>
+                    <div class="card-info">
+                      <span class="card-category">CURVILINEAR SANCTUARY</span>
+                      <h3 class="card-title">「流動之域」私人層峰會所</h3>
+                      <p class="card-desc">數位流線雕塑與極致沉浸空間氛圍，專為少數品味領袖打造的私密社交客廳。</p>
+                    </div>
+                  </article>
+
+                  <!-- 卡片 4 -->
+                  <article class="gallery-card" data-index="3">
+                    <div class="card-image-box">
+                      <img src="images/gallery/gallery-4.jpg" alt="永恆之境" class="card-img" />
+                      <div class="card-badge">PROJECT 04</div>
+                    </div>
+                    <div class="card-info">
+                      <span class="card-category">TIMELESS PENTHOUSE</span>
+                      <h3 class="card-title">「永恆之境」層峰無界生活</h3>
+                      <p class="card-desc">無邊際露台與 270 度壯闊全景，將自然與奢華居所的界線化為詩意長卷。</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <!-- 底部進度條與左右導引 -->
+              <div class="gallery-bottom-bar">
+                <div class="gallery-progress-wrap">
+                  <div class="gallery-progress-fill" id="galleryProgressFill"></div>
+                </div>
+                <div class="gallery-controls">
+                  <div class="gallery-counter">
+                    <span id="galleryCurrentNum" class="gold-text">01</span>
+                    <span class="counter-slash">/</span>
+                    <span>04</span>
+                  </div>
+                  <div class="gallery-nav-buttons">
+                    <button type="button" id="btnGalleryPrev" class="btn-gallery-nav" aria-label="上一個作品" title="上一個作品">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnGalleryNext" class="btn-gallery-nav" aria-label="下一個作品" title="下一個作品">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: 工藝與奢華維度 (Responsive Line Splits on Scroll 參考 codepen.io/GreenSock/pen/GggpRoB) -->
+    <section class="fourth section-lines">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <div class="content-wrapper lines-content-wrapper">
+              <span class="section-tag">04 / TIMELESS CRAFTSMANSHIP</span>
+              
+              <div class="split-lines-quote" id="section4Quote">
+                <!-- 第一階段：首行空間箴言（進入本頁時立即破土升起） -->
+                <div class="split-line-mask line-mask-stage-1">
+                  <span class="split-line-inner line-1">真正的奢華，是洗鍊至極的純粹秩序</span>
+                </div>
+                <!-- 第二階段：深化對話（滾動推進展開） -->
+                <div class="split-line-mask line-mask-stage-2">
+                  <span class="split-line-inner line-2">在光與影的沈默交界，構築時間帶不走的空間詩意</span>
+                </div>
+                <div class="split-line-mask line-mask-stage-2">
+                  <span class="split-line-inner line-3">海悅廣告攜手 Sparko · 以極限工藝向永恆致敬</span>
+                </div>
+              </div>
+
+              <div class="quote-footer">
+                <div class="quote-line-bar" id="quoteLineBar"></div>
+                <p class="section-sub quote-sub" id="quoteSub">Architecture in its purest essence becomes timeless art</p>
+                <!-- 互動引導標籤 -->
+                <div class="section4-scroll-cue" id="section4ScrollCue" title="點擊或滾動推進">
+                  <span class="cue-dot"></span>
+                  <span class="cue-text" id="cueText">文字展開中 · REVEALING...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: 滑至底部的尊榮預約觸發區 (CTA Trigger) -->
+    <section class="fifth">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <div class="content-wrapper">
+              <span class="section-tag">05 / PRIVATE INVITATION</span>
+              <h2 class="section-heading">尊榮鑑賞 · 敬邀入席</h2>
+              <p class="section-sub">Exclusive Private Viewing Experience</p>
+
+              <!-- 底部大器觸發按鈕（預留常數文字變數 CTA_BUTTON_TEXT） -->
+              <div class="cta-trigger-wrapper">
+                <button id="btnCtaBottom" class="btn-cta-bottom" aria-label="預約專屬鑑賞">
+                  <span id="ctaBtnText" class="cta-btn-text">預約專屬鑑賞 / PRIVATE VIEWING</span>
+                  <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- ============================================================
+       CURVE SWIPE SVG OVERLAY (參考 GreenSock Curve Swipe https://codepen.io/GreenSock/pen/EaKpEpJ)
+       ============================================================ -->
+  <div class="curve-swipe-container" id="curveSwipeContainer">
+    <svg class="curve-swipe-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="curveSwipePath" d="M 0 100 L 0 100 Q 50 100 100 100 L 100 100 Z" fill="#ffffff"></path>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       CINEMATIC PRIVATE BOOKING MODAL (全螢幕高階純白毛玻璃遮罩)
+       ============================================================ -->
+  <div class="modal-overlay" id="privateBookingModal" aria-modal="true" role="dialog" aria-hidden="true">
+    <!-- 右上角極簡關閉按鈕 -->
+    <button id="btnModalClose" class="btn-modal-close" title="關閉預約視窗" aria-label="Close Modal">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <!-- 尊榮預約表單卡片 -->
+    <div class="modal-card">
+      <div id="bookingFormContainer">
+        <div class="modal-brand-badge">
+          <span>SPARKO</span>
+          <span>×</span>
+          <span>海悅廣告</span>
+        </div>
+        
+        <h3 class="modal-title">專屬私人鑑賞預約</h3>
+        
+        <p class="modal-trust-copy">
+          每一席空間皆為少數人而生。送出後，您的專屬顧問將於 24 小時內以私密方式致電確認鑑賞時段。
+        </p>
+
+        <form class="booking-form" id="bookingForm" onsubmit="return false;">
+          <!-- 姓名與性別稱謂 -->
+          <div class="form-row">
+            <div class="form-field-group">
+              <label class="form-label" for="guestName">貴賓尊稱 (Name / Salutation)</label>
+              <input type="text" id="guestName" class="form-input" placeholder="例如：張先生 / 林女士" required />
+              <span class="field-line"></span>
+            </div>
+
+            <div class="form-field-group">
+              <label class="form-label" for="guestPhone">聯絡電話 (Mobile)</label>
+              <input type="tel" id="guestPhone" class="form-input" placeholder="0912-345-678" required />
+              <span class="field-line"></span>
+            </div>
+          </div>
+
+          <!-- 電子信箱與鑑賞時段 -->
+          <div class="form-row">
+            <div class="form-field-group">
+              <label class="form-label" for="guestEmail">電子信箱 (Email)</label>
+              <input type="email" id="guestEmail" class="form-input" placeholder="vip@hiyes.com.tw" required />
+              <span class="field-line"></span>
+            </div>
+
+            <div class="form-field-group">
+              <label class="form-label" for="guestTime">預計鑑賞時段 (Preferred Time)</label>
+              <select id="guestTime" class="form-select" required>
+                <option value="" disabled selected>請選擇期盼預約時段</option>
+                <option value="morning">平日上午 (10:00 - 12:00)</option>
+                <option value="afternoon">平日下午 (14:00 - 17:00)</option>
+                <option value="evening">平日晚間 (18:30 - 20:30)</option>
+                <option value="weekend">週末全日尊榮時段 (由顧問協調)</option>
+                <option value="custom">專人隱密另約時段</option>
+              </select>
+              <span class="field-line"></span>
+            </div>
+          </div>
+
+          <!-- 特殊需求或留話 -->
+          <div class="form-field-group">
+            <label class="form-label" for="guestNotes">特殊需求或留話 (Notes)</label>
+            <textarea id="guestNotes" class="form-textarea" rows="2" placeholder="請填寫同行人數、偏好戶型或需專屬泊車引導等需求..."></textarea>
+            <span class="field-line"></span>
+          </div>
+
+          <!-- 送出按鈕 -->
+          <button type="submit" id="btnSubmitBooking" class="btn-form-submit">
+            <span>確認送出預約 / SUBMIT INVITATION</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- 預約成功反饋畫面 -->
+      <div class="booking-success-box" id="bookingSuccessBox">
+        <div class="success-badge-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h4 class="success-title">預約已由專人受理</h4>
+        <div class="booking-ref-pill">BOOKING REF: HY-SPARKO-8829</div>
+        <p class="success-desc">
+          感謝您的信任與預約。海悅廣告 × Sparko 專屬空間顧問團隊已收到您的鑑賞需求，將於 24 小時內以隱密專線致電為您細緻安排專屬時段。
+        </p>
+        <button type="button" id="btnReturnHome" class="btn-return-home">
+          返回空間展示 / RETURN TO EXHIBITION
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       GSAP CORE & OBSERVER PLUGIN
+       ============================================================ -->
+  <script src="assets/js/gsap.min.js"></script>
+  <script>
+    if (typeof gsap === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"><\/script>');
+    }
+  </script>
+  <script src="assets/js/Observer.min.js"></script>
+  <script>
+    if (typeof Observer === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
